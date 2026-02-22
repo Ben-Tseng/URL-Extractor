@@ -1,0 +1,28 @@
+# Privacy Policy
+
+Effective date: 2026-02-22
+
+Simple URL Extractor does not collect, sell, or transmit personal data.
+
+## What data is stored
+The extension stores only user-defined extraction settings (optional start marker and end marker) in Chrome sync storage (`chrome.storage.sync`).
+
+## How data is used
+Stored settings are used only to improve URL extraction behavior on the user's browser.
+
+## Data transmission
+The extension does not send user data, browsing content, or extracted URLs to any remote server.
+
+## Third-party sharing
+No user data is shared with third parties.
+
+## Permissions
+- `contextMenus`: add the right-click extraction command.
+- `activeTab` and `scripting`: show an in-page URL chooser only after user action.
+- `storage`: save optional extraction markers.
+
+## Data retention and control
+Users can clear extension data at any time by removing the extension or resetting settings.
+
+## Contact
+For privacy questions, contact: [your-email@example.com]
