@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Simple URL Extractor",
+  "version": "1.0.0",
+  "description": "Extract URLs from selected text via context menu and open them quickly.",
+  "permissions": [
+    "contextMenus",
+    "scripting",
+    "storage",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "128.png",
+    "48": "128.png",
+    "128": "128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "128.png",
+      "48": "128.png",
+      "128": "128.png"
+    },
+    "default_title": "URL Extractor Settings",
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}
