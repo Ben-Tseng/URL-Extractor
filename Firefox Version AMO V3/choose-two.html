@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Choose URL</title>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+
+      body {
+        margin: 0;
+        font-family: "SF Pro Text", "PingFang SC", "Helvetica Neue", sans-serif;
+        background: #ffffff;
+        color: #111111;
+      }
+
+      .wrap {
+        padding: 14px;
+      }
+
+      h1 {
+        margin: 0 0 4px;
+        font-size: 15px;
+        font-weight: 600;
+      }
+
+      .desc {
+        margin: 0 0 10px;
+        font-size: 11px;
+        color: #737373;
+      }
+
+      .url-btn {
+        width: 100%;
+        border: 1px solid #dddddd;
+        border-radius: 12px;
+        background: #ffffff;
+        color: #111111;
+        padding: 10px;
+        margin-bottom: 8px;
+        text-align: left;
+        font-size: 12px;
+        line-height: 1.35;
+        word-break: break-all;
+        cursor: pointer;
+      }
+
+      .url-btn:hover {
+        border-color: #111111;
+      }
+
+      .footer {
+        display: flex;
+        gap: 8px;
+        margin-top: 2px;
+      }
+
+      button {
+        flex: 1;
+        border: 1px solid #d9d9d9;
+        border-radius: 10px;
+        background: #ffffff;
+        color: #111111;
+        padding: 7px 8px;
+        font-size: 12px;
+        cursor: pointer;
+      }
+
+      button.primary {
+        border-color: #111111;
+        background: #111111;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Choose a URL to open</h1>
+      <p class="desc">2 links detected</p>
+      <div id="list"></div>
+      <div class="footer">
+        <button id="openBothBtn" type="button" class="primary">Open Both</button>
+        <button id="closeBtn" type="button">Close</button>
+      </div>
+    </div>
+
+    <script src="choose-two.js"></script>
+  </body>
+</html>
