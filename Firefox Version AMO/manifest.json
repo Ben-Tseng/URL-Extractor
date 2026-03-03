@@ -1,0 +1,41 @@
+{
+  "manifest_version": 2,
+  "name": "Simple URL Extractor",
+  "version": "1.0.0",
+  "description": "Extract URLs from selected text via context menu and open them quickly.",
+  "icons": {
+    "16": "128.png",
+    "48": "128.png",
+    "128": "128.png"
+  },
+  "permissions": [
+    "contextMenus",
+    "storage",
+    "activeTab",
+    "tabs"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "128.png",
+      "48": "128.png",
+      "128": "128.png"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "simple-url-extractor@example.com",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ],
+        "optional": []
+      }
+    }
+  }
+}

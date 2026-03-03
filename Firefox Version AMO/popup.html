@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>URL Settings</title>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+
+      body {
+        margin: 0;
+        width: 300px;
+        min-height: 172px;
+        padding: 14px;
+        box-sizing: border-box;
+        font-family: "SF Pro Text", "PingFang SC", "Helvetica Neue", sans-serif;
+        background: #ffffff;
+        color: #111111;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.01em;
+      }
+
+      .field {
+        margin-bottom: 10px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 11px;
+        color: #6b6b6b;
+      }
+
+      input {
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #d9d9d9;
+        border-radius: 10px;
+        padding: 8px 10px;
+        font-size: 12px;
+        outline: none;
+        background: #ffffff;
+        color: #111111;
+      }
+
+      input:focus {
+        border-color: #111111;
+      }
+
+      button {
+        width: 100%;
+        border: 0;
+        border-radius: 10px;
+        padding: 9px 10px;
+        font-size: 12px;
+        font-weight: 600;
+        background: #111111;
+        color: #ffffff;
+        cursor: pointer;
+      }
+
+      #status {
+        margin-top: 8px;
+        min-height: 16px;
+        font-size: 11px;
+        color: #4d4d4d;
+      }
+
+      .hint {
+        margin-top: 4px;
+        font-size: 10px;
+        color: #8a8a8a;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Precise URL Extraction</h1>
+
+    <div class="field">
+      <label for="startMarker">Start marker (optional)</label>
+      <input id="startMarker" type="text" placeholder="e.g. href=\"" />
+    </div>
+
+    <div class="field">
+      <label for="endMarker">End marker (optional)</label>
+      <input id="endMarker" type="text" placeholder="e.g. \"" />
+    </div>
+
+    <button id="saveBtn" type="button">Save</button>
+    <div id="status"></div>
+    <div class="hint">Leave both empty for standard URL detection</div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
